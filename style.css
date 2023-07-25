@@ -232,7 +232,7 @@ footer{
     .barraIzq img{
         display:none
     }
-    .barraDer img{
+    .barraDer .logoGris{
         display: inline;
     }
     .barraDer{
