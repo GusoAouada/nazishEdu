@@ -63,7 +63,7 @@ header{
     width: 386px;
     height: 62px;
     margin: 22px;
-    margin-right: 102px;
+    /* margin-right: 5vw; */
     display: flex;
     justify-content: space-between;
 }
@@ -120,10 +120,12 @@ header{
     right: 0;
 }
 
+
 .contenedor{
     border-radius: 100px 100px 0 0;
     padding: 25px;
     padding-bottom: 50px;
+    min-width: 320px;
     background-color: #DFEAFF;
     display: flex;
     justify-content: space-around;
@@ -137,6 +139,8 @@ header{
     border-radius: 20px;
     max-width: 365px;
     max-height: 537px;
+    min-width: 270px;
+    min-height: 335px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -165,39 +169,57 @@ header{
     text-align: center;
 }
 
+
 footer{
+    display: flex;
+    justify-content: center;
+}
+
+.pie{
     padding: 65px;
+    max-width: 1700px;
     display: flex;
     justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: center;
+    column-gap: 30vw;
 }
-.pieIzq{
+.copyright{
     width: 195px;
     font-size: 0.7rem;
     font-weight: 500;
     color: #867B7B;
 }
 
-.pieDer{
-    width: 240px;
+.followUs{
+    width: 175px;
+    height: 94.5px;
     font-size: 1.5rem;
     font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: #777777;
+    padding-top: 10px;
 }
 
-.pieDer i:nth-child(1){
+.redes{
+    width: 175px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.redes i:nth-child(1){
     color: #E50000;
 }
 
-.pieDer i:nth-child(2){
+.redes i:nth-child(2){
     color: #0076E2;
 }
 
-.pieDer i:nth-child(3){
+.redes i:nth-child(3){
     color: #00C5C5;
 }
-
 
 
 @media screen and (max-width: 1350px){
@@ -206,16 +228,17 @@ footer{
     }
 }
 
-@media screen and (max-width: 1024px){
+/* @media screen and (max-width: 1024px){
     html{font-size: 16px;}
-}
+} */
 
 @media screen and (max-width: 950px){
-    html{font-size: 16px;}
     header{
         padding: 0;
         flex-direction: column-reverse;
         align-items: center;
+        margin-bottom: 60px;
+        margin-top: 2px;
     }
     .botones{display: none;}
     .menuPuntos{
@@ -236,7 +259,7 @@ footer{
         display: inline;
     }
     .barraDer{
-        width: 90vw; 
+        width: 98vw; 
         flex-direction: row;
         justify-content: space-between;
         align-items: initial;
@@ -256,7 +279,19 @@ footer{
         padding: 3.2vw;
     }
 
-    footer{
+    .pie{
         flex-direction: column;
+        align-items: normal;
     }
+
+    .copyright{
+        order: 2;
+        width: 268px;
+        padding-top: 107.7;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+        html{font-size: 16px;}
 }
